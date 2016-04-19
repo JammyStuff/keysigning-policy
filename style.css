@@ -1,0 +1,105 @@
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1 small {
+    color: #909090;
+    vertical-align: text-bottom;
+}
+
+pre {
+    background-color: #F0F0F0;
+}
+
+div#container {
+    margin: auto;
+    width: 960px;
+}
+
+div.cert-level-box {
+    margin-bottom: 30px;
+}
+
+div.col-1 {
+    float: left;
+    width: 80px;
+}
+
+div.col-2 {
+    float: left;
+    width: 160px;
+}
+
+div.col-3 {
+    float: left;
+    width: 240px;
+}
+
+div.col-4 {
+    float: left;
+    width: 320px;
+}
+
+div.col-5 {
+    float: left;
+    width: 400px;
+}
+
+div.col-6 {
+    float: left;
+    width: 480px;
+}
+
+div.col-7 {
+    float: left;
+    width: 560px;
+}
+
+div.col-8 {
+    float: left;
+    width: 640px;
+}
+
+div.col-9 {
+    float: left;
+    width: 720px;
+}
+
+div.col-10 {
+    float: left;
+    width: 800px;
+}
+
+div.col-11 {
+    float: left;
+    width: 880px;
+}
+
+div.col-12 {
+    float: left;
+    width: 960px;
+}
+
+div.row:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.cert-level {
+    background-color: #702F8A;
+    border-radius: 80px;
+    color: #FFFFFF;
+    height: 160px;
+    text-align: center;
+    width: 160px;
+}
+
+.cert-level-num {
+    font-size: 4.5em;
+}

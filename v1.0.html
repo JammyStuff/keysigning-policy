@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>PGP Key Signing Policy — Version 1.0</title>
+    </head>
+    <body>
+        <div id="container">
+            <h1>PGP Key Signing Policy <small>Version 1.0</small></h1>
+            <p>This version of the policy was published on <strong>19th April 2016</strong> and is valid for all keys signed by the key below from that date until the date upon which the next version is published.</p>
+<pre>pub   rsa4096/1309B51487CCBB08 2015-03-15 [expires: 2021-01-21]
+      Key fingerprint = 42D1 9735 496E EADC D371  C0A4 1309 B514 87CC BB08
+uid                 [ultimate] James Wheatley &lt;james@jammy.co&gt;
+uid                 [ultimate] James Wheatley &lt;jwheatle@Brocade.com&gt;
+sub   rsa4096/0141C9B0DA550D2F 2015-03-15 [expires: 2019-01-22]
+sub   rsa4096/8990640A4994AB48 2015-03-15 [expires: 2019-01-22]
+sub   rsa4096/F1FB7AAD2EC02A45 2015-05-09 [expires: 2019-01-22]</pre>
+            <p>This version of the policy is available at <a href="https://ksp.jammy.co/v1.0.html">https://ksp.jammy.co/v1.0.html</a>.</p>
+            <p>A detached signature for this version of the policy, made by the key above, is available at <a href="https://ksp.jammy.co/v1.0.html.asc">https://ksp.jammy.co/v1.0.html.asc</a>.</p>
+            <p>The latest version of the policy will always be available at <a href="https://ksp.jammy.co/">https://ksp.jammy.co/</a>.</p>
+            <h2>Certification Levels</h2>
+            <p>The requirements for me to sign a UID at each of the certification levels are given below:</p>
+            <div class="row cert-level-box">
+                <div class="col-2 cert-level">
+                    <strong class="cert-level-num">0</strong>
+                    <br>
+                    <strong>No Claim</strong>
+                </div>
+                <div class="col-10">
+                    <ul>
+                        <li>This level is reserved for keys signed as a result of a keysigning party.</li>
+                        <li>I need to meet the owner of the key in person.</li>
+                        <li>The owner of the key must verify the key fingerprint.</li>
+                        <li>The owner of the key must be able to demonstrate their ownership of the private key. This requirement is satisfied by me delivering the signed key encrypted with the public key.</li>
+                        <li>I need to see at least one form of identification meeting the requirements outlined in the <a href="#id-requirements">Identification Requirements</a> section.</li>
+                        <li>The UID must meet the requirements outlined in the <a href="#uid-requirements">UID Requirements</a> section.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row cert-level-box">
+                <div class="col-2 cert-level">
+                    <strong class="cert-level-num">1</strong>
+                    <br>
+                    <strong>Persona<br>Verification</strong>
+                </div>
+                <div class="col-10">
+                    <ul>
+                        <li>I need to meet the owner of the key in person.</li>
+                        <li>The owner of the key must verify the key fingerprint.</li>
+                        <li>The owner of the key must be able to demonstrate their ownership of the private key. This requirement is satisfied by me delivering the signed key encrypted with the public key.</li>
+                        <li>I need to have known the owner of the key by the pseudonym/nickname in the UID for at least two years.</li>
+                        <li>If the UID contains an email address, the owner of the key must be able to demonstrate their ownership of that email address. This requirement is satisfied by me delivering the signed key to that email address.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row cert-level-box">
+                <div class="col-2 cert-level">
+                    <strong class="cert-level-num">2</strong>
+                    <br>
+                    <strong>Casual<br>Verification</strong>
+                </div>
+                <div class="col-10">
+                    <ul>
+                        <li>I need to meet the owner of the key in person.</li>
+                        <li>The owner of the key must verify the key fingerprint.</li>
+                        <li>The owner of the key must be able to demonstrate their ownership of the private key. This requirement is satisfied by me delivering the signed key encrypted with the public key.</li>
+                        <li>I need to see at least one form of identification meeting the requirements outlined in the <a href="#id-requirements">Identification Requirements</a> section.</li>
+                        <li>The UID must meet the requirements outlined in the <a href="#uid-requirements">UID Requirements</a> section.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row cert-level-box">
+                <div class="col-2 cert-level">
+                    <strong class="cert-level-num">3</strong>
+                    <br>
+                    <strong>Extensive<br>Verification</strong>
+                </div>
+                <div class="col-10">
+                    <ul>
+                        <li>I need to meet the owner of the key in person.</li>
+                        <li>The owner of the key must verify the key fingerprint.</li>
+                        <li>The owner of the key must be able to demonstrate their ownership of the private key. This requirement is satisfied by me delivering the signed key encrypted with the public key.</li>
+                        <li>I need to have known the owner of the key by the name in the UID for at least two years.</li>
+                        <li>I need to see at least two forms of identification meeting the requirements outlined in the <a href="#id-requirements">Identification Requirements</a> section.</li>
+                        <li>The UID must meet the requirements outlined in the <a href="#uid-requirements">UID Requirements</a> section.</li>
+                    </ul>
+                </div>
+            </div>
+            <h2 id="id-requirements">Identification Requirements</h2>
+            <p>In order for an identification document to be acceptable, it must meet the following requirements:</p>
+            <ul>
+                <li>Be Government issued.</li>
+                <li>Be either a passport, ID card, or driving licence.</li>
+                <li>Have forgery protection features (such as holograms, raised print, watermarks, etc).</li>
+                <li>Must not show any signs of tampering.</li>
+                <li>Show the full, legal name of the owner.</li>
+                <li>Show the nationality of the owner.</li>
+                <li>Show a recognisable photo of the owner.</li>
+                <li>Must not be expired.</li>
+            </ul>
+            <h2 id="uid-requirements">UID Requirements</h2>
+            <p>In order for me to sign a UID (except with Persona Verification), the following requirements need to be met:</p>
+            <ul>
+                <li>Must contain the full, unabbreviated surname.</li>
+                <li>All parts of the name must be confirmed by the identification documents shown.</li>
+                <li>Shortened versions of forenames are acceptable, as long as they are commonly used.</li>
+                <li>Diacritical marks are optional.</li>
+                <li>Nicknames are acceptable, as long as they are in double quotes and in the same UID as the real name (otherwise the requirements for Persona Verification must be met).</li>
+                <li>Comments are acceptable, as long as they are in parentheses.</li>
+                <li>If the UID contains an email address, the owner of the key must be able to demonstrate their ownership of that email address. This requirement is satisfied by me delivering the signed key to that email address.</li>
+            </ul>
+            <p>I do not sign picture UIDs.</p>
+        </div>
+    </body>
+</html>
